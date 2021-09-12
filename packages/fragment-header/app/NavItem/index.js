@@ -8,7 +8,7 @@ const NavItem = ({
   index,
   active,
   onClick
-}) =>  (
+}) => (
   <div
     onClick={() => onClick(index)}
     className={classnames({
@@ -16,7 +16,8 @@ const NavItem = ({
       'current': active
     })}
   >
-  </div>  
+    Okay it is working
+  </div>
 )
 
 NavItem.propTypes = {
@@ -27,7 +28,7 @@ NavItem.propTypes = {
 
 NavItem.defaultProps = {
   active: false,
-  onClick: () => {}
+  onClick: () => { }
 }
 
 export default NavItem
